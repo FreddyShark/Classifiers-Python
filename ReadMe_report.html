@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)file:///C:/Users/fady/AppData/Local/Temp/mume201974-15964-1hgbmz4.nzn4.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>ReadMe_report</title>
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///C:/Users/fady/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.4.3/node_modules/@shd101wyy/mume/dependencies/katex/katex.min.css">
+      
+      
+
+      
+      
+      
+      
+      
+      
+
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    <script src="http://127.0.0.1:9001/js/socket.js" async=""></script><link rel="stylesheet" href="./ReadMe_report_files/katex.css" integrity="sha384-b/NoaeRXkMxyKcrDw2KtVtYKkVg3dA0rTRgLoV7W2df3MzeR1eHLTi+l4//4fMwk"></head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <p>&nbsp;<br>
+&nbsp;</p>
+<h1 class="mume-header" id="comp3308-report">COMP3308 Report</h1>
+
+<p>&nbsp;<br>
+&nbsp;<br>
+&nbsp;</p>
+<h2 class="mume-header" id="topic-category-computer-science">Topic Category: Computer Science</h2>
+
+<h3 class="mume-header" id="sub-categories-ai-machine-learning-medicine">Sub-categories: A.I., Machine Learning, Medicine</h3>
+
+<p>&nbsp;</p>
+<h2 class="mume-header" id="report-title">Report Title:</h2>
+
+<h3 class="mume-header" id="an-evaluation-of-different-predictive-classifiers-in-the-diagnosis-of-disease"><em>An Evaluation Of Different Predictive Classifiers In The Diagnosis of Disease.</em></h3>
+
+<p>&nbsp;<br>
+Author | SID: 308201809 | The University of Sydney |<br>
+Date: 24/05/2019<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;</p>
+<h4 class="mume-header" id="aim">Aim:</h4>
+
+<p>Innovation and improvements in machine learning are quickly rising, as new problems are solved using AI. The growth of this field of Computer Science has led to a plethora of approaches to choose from. This study aims to compare the performances of a number of classifying algorithms, in analyzing numerical medical data with predictive and diagnostic power. Particular attention is paid to contrasting an example of supervised and unsupervised machine learning. This can serve as a valuable guide in deciding which algorithm to implement, given time or memory constraints of a particular setting. Quick diagnostic tools have potential for widespread use in medical practices, while future large scale studies need to decide if previously successful approaches are applicable, or innovation is required. This is an important choice when considering the complexity of Neural Network Design, both in optimizing accuracy and time cost.</p>
+<p>&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;</p>
+<h4 class="mume-header" id="data">Data:</h4>
+
+<p>The study used a modified data set originally obtained from The National Institute of Diabetes and Digestive and Kidney Disease. It consisted of 768 samples with 8 numerical attributes and a resulting 9th probability coinciding with diagnosis of Diabetes Mellitus. The 9th numerical value was replaced with a binary valued class representing a positive or negative diagnosis. All samples were full; No attribute values were missing. All participants which formed the data set were 21 years of age or older, female, residents near Phoenix, Arizona, USA and of Pima Indian Heritage.</p>
+<p>The following are the attributes in the data set as provided by Prof. Irena Koprinska (Pima Indians Diabetes Database (modified), 2015):</p>
+<ol>
+<li>Number of times pregnant</li>
+<li>Plasma glucose concentration after 2 hours in an oral glucose tolerance test</li>
+<li>Diastolic blood pressure (mm Hg)</li>
+<li>Triceps skin fold thickness (mm)</li>
+<li>2-Hour serum insulin (mu U/ml)</li>
+<li>Body mass index (weight in kg/(height in m)^2)</li>
+<li>Diabetes pedigree function</li>
+<li>Age (years)</li>
+<li>Class variable ("yes" or "no")</li>
+</ol>
+<p>Samples which had class evaluation of "no" (negative diagnosis) totaled 500, while the remaining 268 resulted in a "yes" classification.</p>
+<p>The data was normalized between 0 and 1 before being run through the classifiers. Additionally, each algorithm used the data set described above, and another version with decreased dimensionality. The additional version was obtained through Correlation-based Feature Selection (CFS) using a Greedy Hill climbing Best First search, that augments its path with backtracking. Of the 8 numerical attributes, the following 5 were chosen:</p>
+<ol>
+<li>Plasma glucose concentration</li>
+<li>2-Hour serum insulin</li>
+<li>Body mass index</li>
+<li>Diabetes pedigree function</li>
+<li>Age</li>
+</ol>
+<p>&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;</p>
+<h4>Results:</h4>
+<p>The following algorithms were run on the original and reduced data set using Weka's 10-fold cross validation, and performances were evaluated:</p>
+<ul>
+<li>ZeroR (zero rule majority)</li>
+<li>OneR (one rule)</li>
+<li>1NN (k-nearest neighbors where k = 1, d is Euclidean)</li>
+<li>5NN (k-nearest neighbors where k = 5, d is Euclidean)</li>
+<li>NB (Naive Bayes)</li>
+<li>DT (Decision Tree)</li>
+<li>MLP (Multilayer Perceptron)</li>
+<li>SVM (Support Vector Machine)</li>
+<li>RF (Random Forest)</li>
+</ul>
+<p>Additionally, KNN and NB were implemented independently in accompanying <a href="http://myclassifier.py/">MyClassifier.py</a>, and evaluated using 10-fold cross validation in <a href="http://myevaluator.py/">MyEvaluator.py</a>. The following tables show evaluation of performance as a percentage of correct classifications.</p>
+<p><em>Table 1.0</em></p>
+<table>
+<thead>
+<tr>
+<th><em>Weka</em></th>
+<th>ZeroR</th>
+<th>OneR</th>
+<th>1NN</th>
+<th>5NN</th>
+<th>NB</th>
+<th>DT</th>
+<th>MLP</th>
+<th>SVM</th>
+<th>RF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>no feature selection</td>
+<td>65.10</td>
+<td>70.83</td>
+<td>67.84</td>
+<td>74.48</td>
+<td>75.13</td>
+<td>71.75</td>
+<td>75.39</td>
+<td>76.30</td>
+<td>74.87</td>
+</tr>
+<tr>
+<td>CFS</td>
+<td>65.10</td>
+<td>70.83</td>
+<td>69.01</td>
+<td>74.48</td>
+<td>76.30</td>
+<td>73.31</td>
+<td>75.78</td>
+<td>76.69</td>
+<td>75.91</td>
+</tr>
+</tbody>
+</table>
+<p><em>Table 1.1</em></p>
+<table>
+<thead>
+<tr>
+<th><em>MyClassifier</em></th>
+<th>My1NN</th>
+<th>My5NN</th>
+<th>MyNB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>no feature selection</td>
+<td>68.36</td>
+<td>75.65</td>
+<td>75.01</td>
+</tr>
+<tr>
+<td>CFS</td>
+<td>68.49</td>
+<td>74.87</td>
+<td>75.78</td>
+</tr>
+</tbody>
+</table>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>μ</mi></mrow><annotation encoding="application/x-tex">\mu</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">μ</span></span></span></span> = 72.80 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mspace width="2em"></mspace></mrow><annotation encoding="application/x-tex">\qquad</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace" style="margin-right:2em;"></span></span></span></span>  <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>δ</mi></mrow><annotation encoding="application/x-tex">\delta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03785em;">δ</span></span></span></span> = 3.60</p>
+<p>&nbsp;<br>
+&nbsp;<br>
+The table below ranks the algorithms by overall accuracy<br>
+<em>Table 1.2</em></p>
+<table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>With CFS</th>
+<th>No feature Selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>SVM</td>
+<td>SVM</td>
+</tr>
+<tr>
+<td>2</td>
+<td>NB</td>
+<td>My5NN</td>
+</tr>
+<tr>
+<td>3</td>
+<td>RF</td>
+<td>MLP</td>
+</tr>
+<tr>
+<td>4</td>
+<td>MyNB</td>
+<td>NB</td>
+</tr>
+<tr>
+<td>5</td>
+<td>MLP (equal 4th)</td>
+<td>MyNB</td>
+</tr>
+<tr>
+<td>6</td>
+<td>My5NN</td>
+<td>RF</td>
+</tr>
+<tr>
+<td>7</td>
+<td>5NN</td>
+<td>5NN</td>
+</tr>
+<tr>
+<td>8</td>
+<td>DT</td>
+<td>DT</td>
+</tr>
+<tr>
+<td>9</td>
+<td>OneR</td>
+<td>OneR</td>
+</tr>
+<tr>
+<td>10</td>
+<td>1NN</td>
+<td>My1NN</td>
+</tr>
+<tr>
+<td>11</td>
+<td>My1NN</td>
+<td>1NN</td>
+</tr>
+<tr>
+<td>12</td>
+<td>ZeroR</td>
+<td>ZeroR</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;<br>
+&nbsp;<br>
+Weka's fold models were used to obtain SVM and NB (with CFS) fold accuracies and evaluate the difference in their performances between these top 2 performers. The results are shown below. Weka output files can be found in /WekaFiles/ directory within the submission.</p>
+<p><em>Table 2.0</em></p>
+<table>
+<thead>
+<tr>
+<th>Fold</th>
+<th>NB with CFS</th>
+<th>SVM with CFS</th>
+<th>|<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>d</mi><mrow><mi>F</mi><mi>o</mi><mi>l</mi><mi>d</mi></mrow></msub></mrow><annotation encoding="application/x-tex">d_{Fold}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">d</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.13889em;">F</span><span class="mord mathdefault mtight">o</span><span class="mord mathdefault mtight" style="margin-right:0.01968em;">l</span><span class="mord mathdefault mtight">d</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>|</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>79.22</td>
+<td>76.62</td>
+<td>2.60</td>
+</tr>
+<tr>
+<td>2</td>
+<td>83.12</td>
+<td>84.42</td>
+<td>1.30</td>
+</tr>
+<tr>
+<td>3</td>
+<td>75.32</td>
+<td>75.32</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>4</td>
+<td>80.52</td>
+<td>83.12</td>
+<td>2.60</td>
+</tr>
+<tr>
+<td>5</td>
+<td>79.22</td>
+<td>79.22</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>6</td>
+<td>71.43</td>
+<td>72.73</td>
+<td>1.30</td>
+</tr>
+<tr>
+<td>7</td>
+<td>74.03</td>
+<td>74.03</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>8</td>
+<td>70.13</td>
+<td>66.23</td>
+<td>3.90</td>
+</tr>
+<tr>
+<td>9</td>
+<td>75.00</td>
+<td>77.63</td>
+<td>2.63</td>
+</tr>
+<tr>
+<td>10</td>
+<td>75.00</td>
+<td>77.63</td>
+<td>2.63</td>
+</tr>
+</tbody>
+</table>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>μ</mi><mi>d</mi></msub></mrow><annotation encoding="application/x-tex">\mu_{d}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault">μ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">d</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> = 1.70 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mspace width="2em"></mspace></mrow><annotation encoding="application/x-tex">\qquad</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace" style="margin-right:2em;"></span></span></span></span> <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>δ</mi><mi>d</mi></msub></mrow><annotation encoding="application/x-tex">\delta_{d}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03785em;">δ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.03785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">d</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> = 1.38 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mspace width="2em"></mspace></mrow><annotation encoding="application/x-tex">\qquad</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace" style="margin-right:2em;"></span></span></span></span> Z = 1.70 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msubsup><mrow></mrow><mo>+</mo><mo>−</mo></msubsup></mrow><annotation encoding="application/x-tex">_+^-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.093324em;vertical-align:-0.28186200000000006em;"></span><span class="mord"><span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.811462em;"><span style="top:-2.476469em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">+</span></span></span><span style="top:-3.1031310000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">−</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.28186200000000006em;"><span></span></span></span></span></span></span></span></span></span> 1.04 at 95% confidence interval.</p>
+<p>The same procedure was used to obtain relevant data for DT before and after CFS was applied.<br>
+<em>Table 2.1</em></p>
+<table>
+<thead>
+<tr>
+<th>Fold</th>
+<th>DT</th>
+<th>DT with CFS</th>
+<th>|<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>d</mi><mrow><mi>F</mi><mi>o</mi><mi>l</mi><mi>d</mi></mrow></msub></mrow><annotation encoding="application/x-tex">d_{Fold}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">d</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.13889em;">F</span><span class="mord mathdefault mtight">o</span><span class="mord mathdefault mtight" style="margin-right:0.01968em;">l</span><span class="mord mathdefault mtight">d</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>|</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>77.92</td>
+<td>79.22</td>
+<td>1.30</td>
+</tr>
+<tr>
+<td>2</td>
+<td>76.62</td>
+<td>79.22</td>
+<td>2.60</td>
+</tr>
+<tr>
+<td>3</td>
+<td>70.13</td>
+<td>75.32</td>
+<td>5.19</td>
+</tr>
+<tr>
+<td>4</td>
+<td>72.73</td>
+<td>70.13</td>
+<td>2.60</td>
+</tr>
+<tr>
+<td>5</td>
+<td>75.32</td>
+<td>74.03</td>
+<td>1.29</td>
+</tr>
+<tr>
+<td>6</td>
+<td>62.34</td>
+<td>62.34</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>7</td>
+<td>68.83</td>
+<td>68.83</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>8</td>
+<td>70.13</td>
+<td>71.43</td>
+<td>1.30</td>
+</tr>
+<tr>
+<td>9</td>
+<td>68.42</td>
+<td>77.63</td>
+<td>9.21</td>
+</tr>
+<tr>
+<td>10</td>
+<td>76.32</td>
+<td>75.00</td>
+<td>1.32</td>
+</tr>
+</tbody>
+</table>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>μ</mi><mi>d</mi></msub></mrow><annotation encoding="application/x-tex">\mu_{d}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault">μ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">d</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> = 2.48 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mspace width="2em"></mspace></mrow><annotation encoding="application/x-tex">\qquad</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace" style="margin-right:2em;"></span></span></span></span>  <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>δ</mi><mi>d</mi></msub></mrow><annotation encoding="application/x-tex">\delta_{d}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03785em;">δ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.03785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">d</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> = 2.80 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mspace width="2em"></mspace></mrow><annotation encoding="application/x-tex">\qquad</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace" style="margin-right:2em;"></span></span></span></span>  Z = 2.48 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msubsup><mrow></mrow><mo>+</mo><mo>−</mo></msubsup></mrow><annotation encoding="application/x-tex">_+^-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.093324em;vertical-align:-0.28186200000000006em;"></span><span class="mord"><span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.811462em;"><span style="top:-2.476469em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">+</span></span></span><span style="top:-3.1031310000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">−</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.28186200000000006em;"><span></span></span></span></span></span></span></span></span></span> 2.11 at 95% confidence interval.</p>
+<p>&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+The table below uses precision and recall For a performance measure. Values were obtained from confusion matrices produced by Weka and MyEvaluator. All algorithms used CFS and are ordered by performance F1 ranking.<br>
+<em>Table 3.0</em></p>
+<table>
+<thead>
+<tr>
+<th>Algorithm</th>
+<th>True Positives</th>
+<th>False Positives</th>
+<th>False Negatives</th>
+<th>Precision</th>
+<th>Recall</th>
+<th>F1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5NN</td>
+<td>160</td>
+<td>88</td>
+<td>108</td>
+<td>72.58%</td>
+<td>59.70%</td>
+<td>65.44%</td>
+</tr>
+<tr>
+<td>RF</td>
+<td>166</td>
+<td>83</td>
+<td>102</td>
+<td>66.67%</td>
+<td>61.94%</td>
+<td>64.22%</td>
+</tr>
+<tr>
+<td>MLP</td>
+<td>172</td>
+<td>90</td>
+<td>96</td>
+<td>65.65%</td>
+<td>64.18%</td>
+<td>64.19%</td>
+</tr>
+<tr>
+<td>My5NN</td>
+<td>165</td>
+<td>90</td>
+<td>103</td>
+<td>64.71%</td>
+<td>61.57%</td>
+<td>63.10%</td>
+</tr>
+<tr>
+<td>NB</td>
+<td>153</td>
+<td>67</td>
+<td>115</td>
+<td>69.55%</td>
+<td>57.09%</td>
+<td>62.71%</td>
+</tr>
+<tr>
+<td>DT</td>
+<td>171</td>
+<td>108</td>
+<td>97</td>
+<td>61.29%</td>
+<td>63.81%</td>
+<td>62.52%</td>
+</tr>
+<tr>
+<td>MyNB</td>
+<td>150</td>
+<td>68</td>
+<td>118</td>
+<td>68.81%</td>
+<td>55.97%</td>
+<td>61.72%</td>
+</tr>
+<tr>
+<td>SVN</td>
+<td>142</td>
+<td>53</td>
+<td>126</td>
+<td>72.82%</td>
+<td>52.99%</td>
+<td>61.34%</td>
+</tr>
+<tr>
+<td>OneR</td>
+<td>127</td>
+<td>83</td>
+<td>141</td>
+<td>60.48%</td>
+<td>52.61%</td>
+<td>56.28%</td>
+</tr>
+<tr>
+<td>1NN</td>
+<td>149</td>
+<td>119</td>
+<td>119</td>
+<td>55.60%</td>
+<td>55.60%</td>
+<td>55.60%</td>
+</tr>
+<tr>
+<td>My1NN</td>
+<td>148</td>
+<td>122</td>
+<td>120</td>
+<td>54.81%</td>
+<td>55.22%</td>
+<td>55.01%</td>
+</tr>
+</tbody>
+</table>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>μ</mi><mrow><mi>F</mi><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">\mu_{F1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault">μ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.13889em;">F</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> = 61.10 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mspace width="2em"></mspace></mrow><annotation encoding="application/x-tex">\qquad</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace" style="margin-right:2em;"></span></span></span></span>  <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>δ</mi><mrow><mi>F</mi><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">\delta_{F1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03785em;">δ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.13889em;">F</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> = 3.54 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mspace width="2em"></mspace></mrow><annotation encoding="application/x-tex">\qquad</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace" style="margin-right:2em;"></span></span></span></span><br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>μ</mi><mrow><mi>R</mi><mi>e</mi><mi>c</mi><mi>a</mi><mi>l</mi><mi>l</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\mu_{Recall}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault">μ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.00773em;">R</span><span class="mord mathdefault mtight">e</span><span class="mord mathdefault mtight">c</span><span class="mord mathdefault mtight">a</span><span class="mord mathdefault mtight" style="margin-right:0.01968em;">l</span><span class="mord mathdefault mtight" style="margin-right:0.01968em;">l</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> = 58.24 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mspace width="2em"></mspace></mrow><annotation encoding="application/x-tex">\qquad</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace" style="margin-right:2em;"></span></span></span></span>  <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>δ</mi><mrow><mi>R</mi><mi>e</mi><mi>c</mi><mi>a</mi><mi>l</mi><mi>l</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\delta_{Recall}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03785em;">δ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.03785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.00773em;">R</span><span class="mord mathdefault mtight">e</span><span class="mord mathdefault mtight">c</span><span class="mord mathdefault mtight">a</span><span class="mord mathdefault mtight" style="margin-right:0.01968em;">l</span><span class="mord mathdefault mtight" style="margin-right:0.01968em;">l</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> = 3.99 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mspace width="2em"></mspace></mrow><annotation encoding="application/x-tex">\qquad</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mspace" style="margin-right:2em;"></span></span></span></span><br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;</p>
+<p>&nbsp;<br>
+&nbsp;<br>
+&nbsp;<br>
+&nbsp;</p>
+<h4 class="mume-header" id="discussion">Discussion:</h4>
+
+<p><strong>A General Comparison of Results</strong><br>
+All algorithms returned accuracies between 65.10% and 76.69%, showing a performance range of 11.59%, where <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>μ</mi></mrow><annotation encoding="application/x-tex">\mu</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">μ</span></span></span></span> = 72.80% and population <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>δ</mi></mrow><annotation encoding="application/x-tex">\delta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03785em;">δ</span></span></span></span> = 3.60%. The top performer was in line with expectations, being SVM, but still within the first standard deviation. However, this superiority was significant when compared to the runner up. The bottom performers were also as expected, being ZeroR followed by 1NN. However, these algorthms' performances placed them below the first standard deviation; ZeroR and 1NN may be overly simplistic for such use cases. In comparing Weka's and MyClassifier's implementation of KNN and NB, the largest difference was 1.17% where MyClassifier outperformed Weka. These variations are most likely due to differences in the implementation of 10-fold cross validation, as folds are nonidentical. Table 1.0 and 1.1 contain the full results.<br>
+To gain a more complete picture an F1 measure using recall and precision was also used to evaluate performance on all algorithms with CFS. However, ZeroR was left out of this evaluation. All algorithms returned accuracies between 55.01% and 65.44%, showing a performance range of 10.43% where <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>μ</mi></mrow><annotation encoding="application/x-tex">\mu</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">μ</span></span></span></span> = 61.10% and <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>δ</mi></mrow><annotation encoding="application/x-tex">\delta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03785em;">δ</span></span></span></span> = 3.54%. This method of comparison revealed 5NN to be the top performer and the only algorithm above the first standard deviation. The bottom performers remained consistent with expectations and significantly reduced the mean performance. The largest difference between MyClassfier's implementations and Weka's, was 2.34%, where now Weka outperformed MyClassifier. One remarkable discovery was SVN's relatively poor performance. While it remained in the 1st standard deviation, it occupied the lowest rank after the consistently poor performers. Table 3.0 contains the full set of results.</p>
+<p><strong>The Efficacy of CFS</strong><br>
+The three algorithms ZeroR, OneR and 5NN showed no improvement from CFS. Additionally, MyClassifier's 5NN degraded by 0.78% in overall performance. However, when using F1 as a measure, 5NN with CFS ranked 1st in performance. Algorithms with an overly simplistic method of classification do not benefit from CFS. This is due to the method of classification being independent from attributes lowly correlated to class. For example in ZeroR, removal of any attribute will not change the majority class. In OneR, the rule for classification is based on an attribute with high correlation to the majority class, making it an unlikely candidate for removal by CFS. kNN will be discussed in more detail in the next section.<br>
+All other methods showed some improvement, the greatest of which was a 1.56% increase for DT. Notably, NB had an improvement of 1.17% which gave it an overall score equivalent to SMV's before CFS. Table 2.0 shows the differences in fold accuracy in DT with and without CFS. The change in performance was found to be statistically significant using a sample standard deviation. The higher increase in performance experienced by DT may be due to its preference for compact decision trees (I. Koprinska, 2015).<br>
+The attributes selected aligned with intuitive predictions; Plasma Glucose levels and Serum Insulin are highly specific attributes, and are depended on by practitioners for diagnosis. Additionally, genetic predisposition and BMI are usually strong indicators of risk. However, Diastolic Blood pressure is related to a range of Medical conditions which would likely decrease correlation with class. Further, blood pressure and skin fold tests may highly correlate with BMI, increasing their redundancy. Pregnancy, may have a relatively low correlation to class and while age may be highly related to other attributes, it may be a strong enough indicator of risk for inclusion. CFS seems to be a highly reliable method of efficiently increasing performance.</p>
+<p><strong>Varying k in kNN</strong><br>
+As mentioned, kNN uniquely performed poorly in response to CFS. However, this is not a consistent characteristic for all values of k. Interestingly, the performance of 5NN is not dramatically increased when increasing the size of k, and k = 5 is a reasonable value to use due to diminishing returns. However, when CFS is used, a significant improvement can be obtained. The value k = 10 is commonly used in commercial packages (I. Koprinska, 2015). Combining this k value with CFS yielded a performance of 77.70%, which placed it just ahead of SVM in first position. These results can be obtained by changing the value of k in line 291 of <a href="http://myevaluator.py/">MyEvaluator.py</a>, and running the script with pima-CFS.csv. The flexibility of kNN and its relative performance make it an appealing choice.</p>
+<p><strong>Noting DT's Performance</strong><br>
+DT is often a highly viable option for use cases similar to that being assessed. The decision trees may assist practitioners or researchers reason about predictions made, due to their high readability. This is important when dealing with the complexity of the human body and assists in investigation of the attributes themselves. Unfortunately it's performance was unimpressive according to the sum of average accuracies. The entropy of the data set with respect to the class is:</p>
+<p>H(S) = I(<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mfrac><mn>268</mn><mn>768</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{268}{768}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.190108em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.845108em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">7</span><span class="mord mtight">6</span><span class="mord mtight">8</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span><span class="mord mtight">6</span><span class="mord mtight">8</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span>,<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mfrac><mn>500</mn><mn>768</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{500}{768}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.190108em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.845108em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">7</span><span class="mord mtight">6</span><span class="mord mtight">8</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">5</span><span class="mord mtight">0</span><span class="mord mtight">0</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span>) = <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>−</mo><mo stretchy="false">(</mo><mfrac><mn>268</mn><mn>768</mn></mfrac><mo>⋅</mo><msub><mo><mi>log</mi><mo>⁡</mo></mo><mn>2</mn></msub><mfrac><mn>268</mn><mn>768</mn></mfrac><mo>+</mo><mfrac><mn>500</mn><mn>768</mn></mfrac><mo>⋅</mo><msub><mo><mi>log</mi><mo>⁡</mo></mo><mn>2</mn></msub><mfrac><mn>500</mn><mn>768</mn></mfrac></mrow><annotation encoding="application/x-tex">-(\frac{268}{768}\cdot \log_2\frac{268}{768} + \frac{500}{768}\cdot \log_2\frac{500}{768}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.190108em;vertical-align:-0.345em;"></span><span class="mord">−</span><span class="mopen">(</span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.845108em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">7</span><span class="mord mtight">6</span><span class="mord mtight">8</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span><span class="mord mtight">6</span><span class="mord mtight">8</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.190108em;vertical-align:-0.345em;"></span><span class="mop"><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.20696799999999996em;"><span style="top:-2.4558600000000004em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.24414em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.845108em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">7</span><span class="mord mtight">6</span><span class="mord mtight">8</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span><span class="mord mtight">6</span><span class="mord mtight">8</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.190108em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.845108em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">7</span><span class="mord mtight">6</span><span class="mord mtight">8</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">5</span><span class="mord mtight">0</span><span class="mord mtight">0</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.190108em;vertical-align:-0.345em;"></span><span class="mop"><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.20696799999999996em;"><span style="top:-2.4558600000000004em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.24414em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.845108em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">7</span><span class="mord mtight">6</span><span class="mord mtight">8</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">5</span><span class="mord mtight">0</span><span class="mord mtight">0</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span>) = 0.93 bits</p>
+<p>The data set seems to be well distributed across class categories such that there is little improvement to be made with a different sample. Despite its performance seeming relatively low, measures of F1, recall and precision paint a different picture.</p>
+<p><strong>Context Related Considerations</strong><br>
+The importance of recall vs precision is relevant to this type of study, particularly if a model is being built to assist in diagnosis and screening individuals. Table 3.0 reveals MLP to be the most advantageous with respect to recall, closely followed by DT. Contrastingly SVM performed significantly poorly, falling below the standard deviation of 3.99%. It reveals that given this particular data set, SVM does very well at correctly categorizing negatives, while DT excels at identifying true positives. A higher emphasis should be placed on recall over precision, as consequences of a missed diagnosis are significant. This analysis shows some justification for using MLP as it performs relatively well across all measures, including precision. However, DT should also be considered given its readability. In the context of research, the emphasis on recall may not be appropriate. SVN and 5NN had the highest precisions, which could be useful when trying to evaluate a range. For example, They could be used to derive a minimum financial burden on a country, due to a medical condition.</p>
+<p>&nbsp;</p>
+<h4 class="mume-header" id="conclusion">Conclusion:</h4>
+
+<p>The discussion above served as a guide for choosing an algorithm in medical diagnostic applications. While SVN is often an attractive choice and MLP can be an avenue for original innovative solutions, simple options seem to have great returns proportionally. NB with CFS is a highly favorable candidate when considering its performance and ease of implementation. KNN with CFS is also a viable option, and k values can be manipulated if time and space constraints abide. Meanwhile, the potential advantages of MLP are visible and DT carries some advantages that are related to the context of the study.<br>
+It may be worth while to assess whether accuracies below 77% are sufficient for a given purpose. If improvements can be made beyond this, investigation into innovative methods may be favorable. One potential avenue of enquiry, is use of classifier ensembles with boosting; The current performance values with the data, are sufficient to make them candidates for such an approach. Other possibilities include use of deep learning neural networks for optimization of MLP when exposed to data figures, or use of auto encoders to develop a model that can identify related medical illnesses which arise before the onset of other conditions (though this is not an avenue which has classically benefited from such an approach). Finally, there may be benefit in implementing models, using weighted attributes with careful consideration.</p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  </body></html>
