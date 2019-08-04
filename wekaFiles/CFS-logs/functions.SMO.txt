@@ -1,0 +1,65 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Relation:     pima-normalized-headers-weka.filters.supervised.attribute.AttributeSelection-Eweka.attributeSelection.CfsSubsetEval -P 1 -E 1-Sweka.attributeSelection.BestFirst -D 1 -N 5
+Instances:    768
+Attributes:   6
+              glucose
+              insulin
+              BMI
+              pedigree
+              age
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: yes, no
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -3.9106 * (normalized) glucose
+ +      -0.0027 * (normalized) insulin
+ +      -2.4757 * (normalized) BMI
+ +      -1.2972 * (normalized) pedigree
+ +      -1.0385 * (normalized) age
+ +       3.7384
+
+Number of kernel evaluations: 14314 (66.443% cached)
+
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         589               76.6927 %
+Incorrectly Classified Instances       179               23.3073 %
+Kappa statistic                          0.4524
+Mean absolute error                      0.2331
+Root mean squared error                  0.4828
+Relative absolute error                 51.2805 %
+Root relative squared error            101.2866 %
+Total Number of Instances              768     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.530    0.106    0.728      0.530    0.613      0.464    0.712     0.550     yes
+                 0.894    0.470    0.780      0.894    0.833      0.464    0.712     0.766     no
+Weighted Avg.    0.767    0.343    0.762      0.767    0.756      0.464    0.712     0.691     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 142 126 |   a = yes
+  53 447 |   b = no
+

@@ -1,0 +1,106 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     pima-normalized-headers
+Instances:    768
+Attributes:   9
+              pregnant
+              glucose
+              blood
+              skin
+              insulin
+              BMI
+              pedigree
+              age
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+glucose <= 0.535484
+|   BMI <= 0.167689: no (122.0/1.0)
+|   BMI > 0.167689
+|   |   age <= 0.116667: no (188.0/22.0)
+|   |   age > 0.116667
+|   |   |   insulin <= 0.088942: no (22.0)
+|   |   |   insulin > 0.088942
+|   |   |   |   pedigree <= 0.233134
+|   |   |   |   |   glucose <= 0.316129: no (22.0/1.0)
+|   |   |   |   |   glucose > 0.316129
+|   |   |   |   |   |   age <= 0.55
+|   |   |   |   |   |   |   skin <= 0.271739
+|   |   |   |   |   |   |   |   blood <= 0.591837: yes (52.0/18.0)
+|   |   |   |   |   |   |   |   blood > 0.591837
+|   |   |   |   |   |   |   |   |   pedigree <= 0.135354: no (11.0/1.0)
+|   |   |   |   |   |   |   |   |   pedigree > 0.135354: yes (2.0)
+|   |   |   |   |   |   |   skin > 0.271739
+|   |   |   |   |   |   |   |   blood <= 0.653061: no (19.0/3.0)
+|   |   |   |   |   |   |   |   blood > 0.653061: yes (2.0)
+|   |   |   |   |   |   age > 0.55: no (8.0)
+|   |   |   |   pedigree > 0.233134: yes (37.0/9.0)
+glucose > 0.535484
+|   BMI <= 0.239264
+|   |   glucose <= 0.651613: no (40.0/6.0)
+|   |   glucose > 0.651613
+|   |   |   insulin <= 0.161058: yes (8.0/1.0)
+|   |   |   insulin > 0.161058
+|   |   |   |   pregnant <= 0.058824: no (5.0)
+|   |   |   |   pregnant > 0.058824
+|   |   |   |   |   pedigree <= 0.043126: yes (3.0)
+|   |   |   |   |   pedigree > 0.043126
+|   |   |   |   |   |   age <= 0.533333
+|   |   |   |   |   |   |   pregnant <= 0.411765
+|   |   |   |   |   |   |   |   blood <= 0.489796: yes (6.0/1.0)
+|   |   |   |   |   |   |   |   blood > 0.489796: no (6.0)
+|   |   |   |   |   |   |   pregnant > 0.411765: yes (3.0)
+|   |   |   |   |   |   age > 0.533333: no (4.0)
+|   BMI > 0.239264
+|   |   glucose <= 0.729032
+|   |   |   pregnant <= 0.411765
+|   |   |   |   blood <= 0.367347: yes (6.0)
+|   |   |   |   blood > 0.367347
+|   |   |   |   |   insulin <= 0.213942: yes (65.0/26.0)
+|   |   |   |   |   insulin > 0.213942
+|   |   |   |   |   |   age <= 0.35: no (16.0/1.0)
+|   |   |   |   |   |   age > 0.35: yes (3.0)
+|   |   |   pregnant > 0.411765
+|   |   |   |   insulin <= 0.151442
+|   |   |   |   |   glucose <= 0.677419: yes (3.0/1.0)
+|   |   |   |   |   glucose > 0.677419: no (2.0)
+|   |   |   |   insulin > 0.151442: yes (21.0/2.0)
+|   |   glucose > 0.729032: yes (92.0/12.0)
+
+Number of Leaves  : 	27
+
+Size of the tree : 	53
+
+
+Time taken to build model: 0.03 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         551               71.7448 %
+Incorrectly Classified Instances       217               28.2552 %
+Kappa statistic                          0.3893
+Mean absolute error                      0.3213
+Root mean squared error                  0.452 
+Relative absolute error                 70.6986 %
+Root relative squared error             94.8268 %
+Total Number of Instances              768     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.634    0.238    0.588      0.634    0.610      0.390    0.753     0.552     yes
+                 0.762    0.366    0.795      0.762    0.778      0.390    0.753     0.819     no
+Weighted Avg.    0.717    0.321    0.723      0.717    0.720      0.390    0.753     0.726     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 170  98 |   a = yes
+ 119 381 |   b = no

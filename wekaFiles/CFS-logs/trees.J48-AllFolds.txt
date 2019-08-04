@@ -1,0 +1,1234 @@
+
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     pima-CFS-headers
+Instances:    768
+Attributes:   6
+              glucose
+              insulin
+              BMI
+              pedigree
+              age
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+glucose <= 0.535484
+|   BMI <= 0.167689: no (122.0/1.0)
+|   BMI > 0.167689
+|   |   age <= 0.116667: no (188.0/22.0)
+|   |   age > 0.116667
+|   |   |   insulin <= 0.088942: no (22.0)
+|   |   |   insulin > 0.088942
+|   |   |   |   pedigree <= 0.233134: no (116.0/43.0)
+|   |   |   |   pedigree > 0.233134: yes (37.0/9.0)
+glucose > 0.535484
+|   BMI <= 0.239264
+|   |   glucose <= 0.651613: no (40.0/6.0)
+|   |   glucose > 0.651613
+|   |   |   insulin <= 0.161058: yes (8.0/1.0)
+|   |   |   insulin > 0.161058: no (27.0/11.0)
+|   BMI > 0.239264
+|   |   glucose <= 0.729032
+|   |   |   age <= 0.15: no (50.0/23.0)
+|   |   |   age > 0.15: yes (66.0/19.0)
+|   |   glucose > 0.729032: yes (92.0/12.0)
+
+Number of Leaves  : 	11
+
+Size of the tree : 	21
+
+
+Time taken to build model: 0 seconds
+
+=== Predictions on test data ===
+
+    inst#     actual  predicted error prediction
+
+=== Classifier model for fold 1 ===
+
+J48 pruned tree
+------------------
+
+glucose <= 0.535484
+|   BMI <= 0.167689: no (114.0/1.0)
+|   BMI > 0.167689
+|   |   age <= 0.116667: no (163.0/20.0)
+|   |   age > 0.116667
+|   |   |   insulin <= 0.088942: no (19.0)
+|   |   |   insulin > 0.088942
+|   |   |   |   pedigree <= 0.233134: no (112.0/42.0)
+|   |   |   |   pedigree > 0.233134: yes (30.0/6.0)
+glucose > 0.535484
+|   glucose <= 0.709677
+|   |   BMI <= 0.216769: no (40.0/7.0)
+|   |   BMI > 0.216769: yes (109.0/47.0)
+|   glucose > 0.709677: yes (104.0/19.0)
+
+Number of Leaves  : 	8
+
+Size of the tree : 	15
+
+        1       2:no       2:no       0.877 
+        2       2:no      1:yes   +   0.569 
+        3       2:no       2:no       0.877 
+        4       2:no       2:no       0.991 
+        5       2:no      1:yes   +   0.569 
+        6       2:no       2:no       0.877 
+        7       2:no      1:yes   +   0.8 
+        8       2:no      1:yes   +   0.817 
+        9       2:no       2:no       0.877 
+       10       2:no       2:no       0.991 
+       11       2:no       2:no       0.877 
+       12       2:no       2:no       0.625 
+       13       2:no       2:no       0.991 
+       14       2:no      1:yes   +   0.569 
+       15       2:no      1:yes   +   0.569 
+       16       2:no      1:yes   +   0.817 
+       17       2:no       2:no       0.991 
+       18       2:no      1:yes   +   0.817 
+       19       2:no      1:yes   +   0.8 
+       20       2:no       2:no       0.877 
+       21       2:no       2:no       0.877 
+       22       2:no       2:no       0.877 
+       23       2:no      1:yes   +   0.817 
+       24       2:no       2:no       0.877 
+       25       2:no       2:no       0.825 
+       26       2:no       2:no       0.877 
+       27       2:no      1:yes   +   0.8 
+       28       2:no       2:no       1 
+       29       2:no       2:no       0.877 
+       30       2:no       2:no       0.877 
+       31       2:no       2:no       1 
+       32       2:no       2:no       0.625 
+       33       2:no       2:no       0.877 
+       34       2:no       2:no       0.877 
+       35       2:no       2:no       0.625 
+       36       2:no       2:no       0.877 
+       37       2:no       2:no       1 
+       38       2:no       2:no       0.991 
+       39       2:no       2:no       0.991 
+       40       2:no       2:no       0.877 
+       41       2:no       2:no       0.877 
+       42       2:no       2:no       0.877 
+       43       2:no       2:no       0.877 
+       44       2:no       2:no       0.991 
+       45       2:no       2:no       0.877 
+       46       2:no       2:no       0.877 
+       47       2:no       2:no       0.877 
+       48       2:no       2:no       0.877 
+       49       2:no       2:no       0.991 
+       50       2:no      1:yes   +   0.817 
+       51      1:yes      1:yes       0.817 
+       52      1:yes      1:yes       0.817 
+       53      1:yes      1:yes       0.569 
+       54      1:yes      1:yes       0.817 
+       55      1:yes      1:yes       0.8 
+       56      1:yes      1:yes       0.817 
+       57      1:yes       2:no   +   0.877 
+       58      1:yes      1:yes       0.817 
+       59      1:yes      1:yes       0.8 
+       60      1:yes      1:yes       0.569 
+       61      1:yes       2:no   +   0.877 
+       62      1:yes      1:yes       0.817 
+       63      1:yes      1:yes       0.817 
+       64      1:yes      1:yes       0.8 
+       65      1:yes      1:yes       0.569 
+       66      1:yes      1:yes       0.817 
+       67      1:yes       2:no   +   0.825 
+       68      1:yes      1:yes       0.817 
+       69      1:yes      1:yes       0.8 
+       70      1:yes      1:yes       0.817 
+       71      1:yes      1:yes       0.817 
+       72      1:yes      1:yes       0.569 
+       73      1:yes       2:no   +   0.625 
+       74      1:yes      1:yes       0.817 
+       75      1:yes      1:yes       0.817 
+       76      1:yes      1:yes       0.569 
+       77      1:yes      1:yes       0.569 
+
+=== Classifier model for fold 2 ===
+
+J48 pruned tree
+------------------
+
+glucose <= 0.709677
+|   BMI <= 0.165644: no (128.0/3.0)
+|   BMI > 0.165644
+|   |   glucose <= 0.354839: no (120.0/13.0)
+|   |   glucose > 0.354839
+|   |   |   age <= 0.116667: no (149.0/37.0)
+|   |   |   age > 0.116667
+|   |   |   |   age <= 0.583333: yes (168.0/71.0)
+|   |   |   |   age > 0.583333: no (17.0/4.0)
+glucose > 0.709677
+|   BMI <= 0.237219
+|   |   insulin <= 0.161058: yes (3.0)
+|   |   insulin > 0.161058: no (17.0/7.0)
+|   BMI > 0.237219: yes (89.0/12.0)
+
+Number of Leaves  : 	8
+
+Size of the tree : 	15
+
+        1       2:no       2:no       0.752 
+        2       2:no       2:no       0.977 
+        3       2:no       2:no       0.977 
+        4       2:no       2:no       0.752 
+        5       2:no       2:no       0.892 
+        6       2:no       2:no       0.752 
+        7       2:no       2:no       0.892 
+        8       2:no       2:no       0.977 
+        9       2:no       2:no       0.752 
+       10       2:no      1:yes   +   0.865 
+       11       2:no       2:no       0.977 
+       12       2:no      1:yes   +   0.577 
+       13       2:no       2:no       0.977 
+       14       2:no       2:no       0.977 
+       15       2:no       2:no       0.752 
+       16       2:no       2:no       0.977 
+       17       2:no       2:no       0.752 
+       18       2:no       2:no       0.977 
+       19       2:no      1:yes   +   0.577 
+       20       2:no       2:no       0.765 
+       21       2:no       2:no       0.892 
+       22       2:no      1:yes   +   0.577 
+       23       2:no      1:yes   +   0.577 
+       24       2:no       2:no       0.892 
+       25       2:no       2:no       0.977 
+       26       2:no       2:no       0.752 
+       27       2:no       2:no       0.892 
+       28       2:no      1:yes   +   0.577 
+       29       2:no       2:no       0.977 
+       30       2:no       2:no       0.892 
+       31       2:no       2:no       0.977 
+       32       2:no       2:no       0.892 
+       33       2:no       2:no       0.977 
+       34       2:no       2:no       0.892 
+       35       2:no      1:yes   +   0.865 
+       36       2:no       2:no       0.752 
+       37       2:no       2:no       0.892 
+       38       2:no      1:yes   +   0.577 
+       39       2:no      1:yes   +   0.577 
+       40       2:no       2:no       0.892 
+       41       2:no       2:no       0.977 
+       42       2:no       2:no       0.977 
+       43       2:no       2:no       0.892 
+       44       2:no      1:yes   +   0.577 
+       45       2:no       2:no       0.765 
+       46       2:no       2:no       0.892 
+       47       2:no      1:yes   +   0.577 
+       48       2:no       2:no       0.752 
+       49       2:no       2:no       0.752 
+       50       2:no       2:no       0.892 
+       51      1:yes      1:yes       0.865 
+       52      1:yes      1:yes       0.577 
+       53      1:yes      1:yes       1 
+       54      1:yes      1:yes       0.865 
+       55      1:yes       2:no   +   0.765 
+       56      1:yes      1:yes       0.577 
+       57      1:yes      1:yes       0.865 
+       58      1:yes      1:yes       0.577 
+       59      1:yes      1:yes       0.577 
+       60      1:yes      1:yes       0.865 
+       61      1:yes      1:yes       0.865 
+       62      1:yes       2:no   +   0.588 
+       63      1:yes       2:no   +   0.765 
+       64      1:yes      1:yes       0.577 
+       65      1:yes      1:yes       0.865 
+       66      1:yes      1:yes       0.577 
+       67      1:yes      1:yes       0.577 
+       68      1:yes       2:no   +   0.892 
+       69      1:yes      1:yes       0.865 
+       70      1:yes      1:yes       0.577 
+       71      1:yes      1:yes       0.577 
+       72      1:yes       2:no   +   0.752 
+       73      1:yes      1:yes       0.577 
+       74      1:yes      1:yes       0.577 
+       75      1:yes      1:yes       0.865 
+       76      1:yes      1:yes       0.577 
+       77      1:yes      1:yes       0.865 
+
+=== Classifier model for fold 3 ===
+
+J48 pruned tree
+------------------
+
+glucose <= 0.535484
+|   BMI <= 0.167689: no (109.0/1.0)
+|   BMI > 0.167689
+|   |   age <= 0.1: no (159.0/17.0)
+|   |   age > 0.1
+|   |   |   insulin <= 0.08774: no (22.0)
+|   |   |   insulin > 0.08774
+|   |   |   |   pedigree <= 0.236123: no (115.0/40.0)
+|   |   |   |   pedigree > 0.236123: yes (35.0/8.0)
+glucose > 0.535484
+|   BMI <= 0.239264
+|   |   glucose <= 0.651613: no (37.0/6.0)
+|   |   glucose > 0.651613
+|   |   |   insulin <= 0.161058: yes (8.0/1.0)
+|   |   |   insulin > 0.161058: no (21.0/9.0)
+|   BMI > 0.239264
+|   |   glucose <= 0.729032
+|   |   |   BMI <= 0.503067
+|   |   |   |   age <= 0.35: no (63.0/29.0)
+|   |   |   |   age > 0.35
+|   |   |   |   |   pedigree <= 0.063194: no (5.0/1.0)
+|   |   |   |   |   pedigree > 0.063194: yes (20.0/2.0)
+|   |   |   BMI > 0.503067: yes (15.0/1.0)
+|   |   glucose > 0.729032: yes (82.0/10.0)
+
+Number of Leaves  : 	13
+
+Size of the tree : 	25
+
+        1       2:no       2:no       0.652 
+        2       2:no       2:no       0.838 
+        3       2:no       2:no       0.893 
+        4       2:no       2:no       0.571 
+        5       2:no       2:no       0.991 
+        6       2:no       2:no       0.991 
+        7       2:no      1:yes   +   0.771 
+        8       2:no       2:no       0.893 
+        9       2:no       2:no       0.991 
+       10       2:no       2:no       0.54 
+       11       2:no       2:no       0.893 
+       12       2:no       2:no       0.893 
+       13       2:no       2:no       0.991 
+       14       2:no       2:no       0.893 
+       15       2:no       2:no       0.571 
+       16       2:no      1:yes   +   0.933 
+       17       2:no       2:no       0.54 
+       18       2:no       2:no       0.571 
+       19       2:no       2:no       0.652 
+       20       2:no       2:no       0.991 
+       21       2:no       2:no       1 
+       22       2:no       2:no       0.991 
+       23       2:no       2:no       0.991 
+       24       2:no       2:no       0.652 
+       25       2:no       2:no       0.893 
+       26       2:no       2:no       0.652 
+       27       2:no       2:no       0.652 
+       28       2:no       2:no       0.991 
+       29       2:no       2:no       0.893 
+       30       2:no       2:no       0.991 
+       31       2:no       2:no       0.54 
+       32       2:no      1:yes   +   0.878 
+       33       2:no       2:no       0.893 
+       34       2:no       2:no       0.991 
+       35       2:no       2:no       0.991 
+       36       2:no       2:no       0.991 
+       37       2:no      1:yes   +   0.771 
+       38       2:no       2:no       0.893 
+       39       2:no       2:no       0.54 
+       40       2:no       2:no       0.652 
+       41       2:no       2:no       1 
+       42       2:no       2:no       0.991 
+       43       2:no       2:no       0.838 
+       44       2:no       2:no       0.571 
+       45       2:no       2:no       0.838 
+       46       2:no       2:no       1 
+       47       2:no       2:no       1 
+       48       2:no      1:yes   +   0.878 
+       49       2:no      1:yes   +   0.771 
+       50       2:no       2:no       0.893 
+       51      1:yes       2:no   +   0.54 
+       52      1:yes       2:no   +   0.893 
+       53      1:yes       2:no   +   0.571 
+       54      1:yes       2:no   +   0.652 
+       55      1:yes      1:yes       0.9 
+       56      1:yes      1:yes       0.771 
+       57      1:yes      1:yes       0.878 
+       58      1:yes       2:no   +   0.54 
+       59      1:yes      1:yes       0.878 
+       60      1:yes       2:no   +   0.8 
+       61      1:yes      1:yes       0.878 
+       62      1:yes       2:no   +   0.54 
+       63      1:yes      1:yes       0.878 
+       64      1:yes      1:yes       0.878 
+       65      1:yes       2:no   +   0.893 
+       66      1:yes      1:yes       0.9 
+       67      1:yes      1:yes       0.771 
+       68      1:yes      1:yes       0.771 
+       69      1:yes       2:no   +   0.652 
+       70      1:yes       2:no   +   0.54 
+       71      1:yes       2:no   +   0.652 
+       72      1:yes      1:yes       0.9 
+       73      1:yes      1:yes       0.878 
+       74      1:yes       2:no   +   0.571 
+       75      1:yes      1:yes       0.878 
+       76      1:yes      1:yes       0.878 
+       77      1:yes       2:no   +   0.652 
+
+=== Classifier model for fold 4 ===
+
+J48 pruned tree
+------------------
+
+glucose <= 0.535484
+|   BMI <= 0.167689: no (110.0/1.0)
+|   BMI > 0.167689
+|   |   age <= 0.133333: no (185.0/24.0)
+|   |   age > 0.133333
+|   |   |   insulin <= 0.088942: no (17.0)
+|   |   |   insulin > 0.088942
+|   |   |   |   pedigree <= 0.200256
+|   |   |   |   |   glucose <= 0.367742: no (29.0/4.0)
+|   |   |   |   |   glucose > 0.367742
+|   |   |   |   |   |   age <= 0.55: yes (54.0/25.0)
+|   |   |   |   |   |   age > 0.55: no (6.0)
+|   |   |   |   pedigree > 0.200256: yes (38.0/10.0)
+glucose > 0.535484
+|   BMI <= 0.239264
+|   |   glucose <= 0.651613: no (35.0/5.0)
+|   |   glucose > 0.651613
+|   |   |   insulin <= 0.161058: yes (8.0/1.0)
+|   |   |   insulin > 0.161058: no (25.0/10.0)
+|   BMI > 0.239264
+|   |   glucose <= 0.729032
+|   |   |   age <= 0.35
+|   |   |   |   insulin <= 0.293269
+|   |   |   |   |   insulin <= 0.170673
+|   |   |   |   |   |   BMI <= 0.584867
+|   |   |   |   |   |   |   insulin <= 0.121394: yes (3.0)
+|   |   |   |   |   |   |   insulin > 0.121394
+|   |   |   |   |   |   |   |   insulin <= 0.137019: no (3.0)
+|   |   |   |   |   |   |   |   insulin > 0.137019
+|   |   |   |   |   |   |   |   |   insulin <= 0.145433: yes (4.0)
+|   |   |   |   |   |   |   |   |   insulin > 0.145433: no (36.0/16.0)
+|   |   |   |   |   |   BMI > 0.584867: yes (6.0)
+|   |   |   |   |   insulin > 0.170673: yes (11.0/1.0)
+|   |   |   |   insulin > 0.293269: no (12.0/2.0)
+|   |   |   age > 0.35: yes (29.0/5.0)
+|   |   glucose > 0.729032: yes (80.0/12.0)
+
+Number of Leaves  : 	19
+
+Size of the tree : 	37
+
+        1       2:no       2:no       0.87 
+        2       2:no      1:yes   +   0.909 
+        3       2:no       2:no       0.991 
+        4       2:no       2:no       0.6 
+        5       2:no       2:no       0.991 
+        6       2:no       2:no       0.87 
+        7       2:no       2:no       1 
+        8       2:no       2:no       0.87 
+        9       2:no       2:no       0.87 
+       10       2:no       2:no       0.87 
+       11       2:no      1:yes   +   0.909 
+       12       2:no       2:no       0.87 
+       13       2:no      1:yes   +   0.737 
+       14       2:no      1:yes   +   0.537 
+       15       2:no       2:no       0.991 
+       16       2:no       2:no       0.87 
+       17       2:no       2:no       0.991 
+       18       2:no      1:yes   +   0.909 
+       19       2:no       2:no       0.87 
+       20       2:no       2:no       0.833 
+       21       2:no       2:no       0.857 
+       22       2:no       2:no       0.87 
+       23       2:no       2:no       0.991 
+       24       2:no       2:no       0.857 
+       25       2:no      1:yes   +   0.737 
+       26       2:no      1:yes   +   0.828 
+       27       2:no      1:yes   +   0.909 
+       28       2:no      1:yes   +   0.537 
+       29       2:no      1:yes   +   0.737 
+       30       2:no       2:no       0.991 
+       31       2:no       2:no       0.991 
+       32       2:no      1:yes   +   0.537 
+       33       2:no       2:no       0.87 
+       34       2:no       2:no       0.87 
+       35       2:no       2:no       0.87 
+       36       2:no       2:no       0.862 
+       37       2:no       2:no       0.857 
+       38       2:no       2:no       0.991 
+       39       2:no       2:no       0.991 
+       40       2:no       2:no       0.87 
+       41       2:no       2:no       0.87 
+       42       2:no       2:no       0.862 
+       43       2:no       2:no       0.991 
+       44       2:no       2:no       0.991 
+       45       2:no       2:no       0.87 
+       46       2:no       2:no       0.991 
+       47       2:no       2:no       0.862 
+       48       2:no       2:no       0.857 
+       49       2:no      1:yes   +   0.828 
+       50       2:no       2:no       0.87 
+       51      1:yes      1:yes       0.85 
+       52      1:yes      1:yes       0.85 
+       53      1:yes       2:no   +   0.556 
+       54      1:yes       2:no   +   0.87 
+       55      1:yes      1:yes       0.737 
+       56      1:yes      1:yes       0.85 
+       57      1:yes      1:yes       0.85 
+       58      1:yes       2:no   +   0.857 
+       59      1:yes       2:no   +   0.556 
+       60      1:yes      1:yes       0.537 
+       61      1:yes      1:yes       0.85 
+       62      1:yes       2:no   +   0.833 
+       63      1:yes      1:yes       0.85 
+       64      1:yes      1:yes       0.537 
+       65      1:yes      1:yes       0.85 
+       66      1:yes       2:no   +   0.862 
+       67      1:yes      1:yes       0.85 
+       68      1:yes      1:yes       0.85 
+       69      1:yes      1:yes       0.85 
+       70      1:yes       2:no   +   0.87 
+       71      1:yes       2:no   +   0.862 
+       72      1:yes       2:no   +   0.87 
+       73      1:yes       2:no   +   0.556 
+       74      1:yes      1:yes       0.85 
+       75      1:yes      1:yes       0.828 
+       76      1:yes      1:yes       0.85 
+       77      1:yes       2:no   +   0.6 
+
+=== Classifier model for fold 5 ===
+
+J48 pruned tree
+------------------
+
+glucose <= 0.535484
+|   BMI <= 0.167689: no (109.0/1.0)
+|   BMI > 0.167689
+|   |   age <= 0.116667: no (172.0/21.0)
+|   |   age > 0.116667
+|   |   |   insulin <= 0.088942: no (19.0)
+|   |   |   insulin > 0.088942
+|   |   |   |   glucose <= 0.303226
+|   |   |   |   |   pedigree <= 0.272844: no (17.0)
+|   |   |   |   |   pedigree > 0.272844: yes (2.0)
+|   |   |   |   glucose > 0.303226
+|   |   |   |   |   pedigree <= 0.059778
+|   |   |   |   |   |   age <= 0.183333: no (11.0)
+|   |   |   |   |   |   age > 0.183333
+|   |   |   |   |   |   |   glucose <= 0.412903: no (9.0/1.0)
+|   |   |   |   |   |   |   glucose > 0.412903: yes (5.0)
+|   |   |   |   |   pedigree > 0.059778: yes (93.0/36.0)
+glucose > 0.535484
+|   BMI <= 0.239264
+|   |   age <= 0.1: no (23.0/2.0)
+|   |   age > 0.1
+|   |   |   insulin <= 0.141827: yes (7.0)
+|   |   |   insulin > 0.141827
+|   |   |   |   glucose <= 0.651613: no (15.0/1.0)
+|   |   |   |   glucose > 0.651613
+|   |   |   |   |   pedigree <= 0.043126: yes (4.0)
+|   |   |   |   |   pedigree > 0.043126
+|   |   |   |   |   |   age <= 0.25
+|   |   |   |   |   |   |   BMI <= 0.220859: yes (4.0)
+|   |   |   |   |   |   |   BMI > 0.220859: no (4.0/1.0)
+|   |   |   |   |   |   age > 0.25: no (10.0/1.0)
+|   BMI > 0.239264: yes (187.0/53.0)
+
+Number of Leaves  : 	17
+
+Size of the tree : 	33
+
+        1       2:no       2:no       0.878 
+        2       2:no       2:no       0.878 
+        3       2:no      1:yes   +   0.613 
+        4       2:no       2:no       0.991 
+        5       2:no       2:no       0.991 
+        6       2:no       2:no       0.878 
+        7       2:no      1:yes   +   0.613 
+        8       2:no       2:no       0.991 
+        9       2:no      1:yes   +   0.613 
+       10       2:no       2:no       1 
+       11       2:no       2:no       0.878 
+       12       2:no       2:no       0.991 
+       13       2:no       2:no       0.878 
+       14       2:no      1:yes   +   1 
+       15       2:no       2:no       0.991 
+       16       2:no      1:yes   +   0.717 
+       17       2:no       2:no       0.991 
+       18       2:no       2:no       0.878 
+       19       2:no       2:no       0.878 
+       20       2:no      1:yes   +   0.613 
+       21       2:no       2:no       0.878 
+       22       2:no       2:no       0.933 
+       23       2:no      1:yes   +   0.717 
+       24       2:no       2:no       0.991 
+       25       2:no       2:no       0.991 
+       26       2:no       2:no       0.889 
+       27       2:no       2:no       0.878 
+       28       2:no       2:no       0.991 
+       29       2:no      1:yes   +   0.613 
+       30       2:no       2:no       0.878 
+       31       2:no      1:yes   +   0.613 
+       32       2:no      1:yes   +   0.717 
+       33       2:no       2:no       0.878 
+       34       2:no       2:no       0.991 
+       35       2:no      1:yes   +   0.717 
+       36       2:no       2:no       0.878 
+       37       2:no       2:no       0.878 
+       38       2:no       2:no       0.933 
+       39       2:no       2:no       1 
+       40       2:no       2:no       0.878 
+       41       2:no      1:yes   +   1 
+       42       2:no       2:no       1 
+       43       2:no      1:yes   +   1 
+       44       2:no      1:yes   +   0.717 
+       45       2:no       2:no       0.878 
+       46       2:no       2:no       1 
+       47       2:no       2:no       0.991 
+       48       2:no       2:no       0.991 
+       49       2:no       2:no       1 
+       50       2:no       2:no       0.991 
+       51      1:yes      1:yes       0.613 
+       52      1:yes      1:yes       0.717 
+       53      1:yes      1:yes       0.613 
+       54      1:yes      1:yes       0.717 
+       55      1:yes      1:yes       0.717 
+       56      1:yes      1:yes       0.717 
+       57      1:yes      1:yes       0.717 
+       58      1:yes      1:yes       0.717 
+       59      1:yes      1:yes       0.717 
+       60      1:yes       2:no   +   0.9 
+       61      1:yes      1:yes       0.717 
+       62      1:yes       2:no   +   1 
+       63      1:yes      1:yes       0.717 
+       64      1:yes      1:yes       0.717 
+       65      1:yes       2:no   +   1 
+       66      1:yes      1:yes       0.717 
+       67      1:yes      1:yes       0.717 
+       68      1:yes      1:yes       0.717 
+       69      1:yes      1:yes       0.613 
+       70      1:yes      1:yes       1 
+       71      1:yes       2:no   +   0.9 
+       72      1:yes      1:yes       0.613 
+       73      1:yes       2:no   +   0.913 
+       74      1:yes      1:yes       0.717 
+       75      1:yes       2:no   +   0.878 
+       76      1:yes      1:yes       0.717 
+       77      1:yes      1:yes       0.717 
+
+=== Classifier model for fold 6 ===
+
+J48 pruned tree
+------------------
+
+glucose <= 0.509677
+|   BMI <= 0.177914: no (113.0/1.0)
+|   BMI > 0.177914
+|   |   age <= 0.133333: no (168.0/20.0)
+|   |   age > 0.133333
+|   |   |   glucose <= 0.354839: no (43.0/6.0)
+|   |   |   glucose > 0.354839: yes (77.0/35.0)
+glucose > 0.509677
+|   glucose <= 0.709677
+|   |   BMI <= 0.239264
+|   |   |   age <= 0: no (11.0)
+|   |   |   age > 0
+|   |   |   |   glucose <= 0.522581: yes (6.0/1.0)
+|   |   |   |   glucose > 0.522581: no (41.0/9.0)
+|   |   BMI > 0.239264
+|   |   |   age <= 0.15
+|   |   |   |   insulin <= 0.205529: yes (36.0/17.0)
+|   |   |   |   insulin > 0.205529: no (18.0/3.0)
+|   |   |   age > 0.15: yes (66.0/21.0)
+|   glucose > 0.709677
+|   |   age <= 0.633333: yes (104.0/16.0)
+|   |   age > 0.633333
+|   |   |   pedigree <= 0.206234: no (5.0)
+|   |   |   pedigree > 0.206234: yes (3.0)
+
+Number of Leaves  : 	13
+
+Size of the tree : 	25
+
+        1       2:no       2:no       1 
+        2       2:no      1:yes   +   0.682 
+        3       2:no      1:yes   +   0.545 
+        4       2:no       2:no       0.881 
+        5       2:no       2:no       0.881 
+        6       2:no      1:yes   +   0.833 
+        7       2:no       2:no       0.86 
+        8       2:no       2:no       0.78 
+        9       2:no      1:yes   +   0.545 
+       10       2:no       2:no       0.991 
+       11       2:no      1:yes   +   0.545 
+       12       2:no      1:yes   +   0.545 
+       13       2:no       2:no       0.881 
+       14       2:no       2:no       0.86 
+       15       2:no       2:no       0.881 
+       16       2:no      1:yes   +   0.682 
+       17       2:no      1:yes   +   0.682 
+       18       2:no      1:yes   +   0.528 
+       19       2:no       2:no       0.991 
+       20       2:no       2:no       0.991 
+       21       2:no       2:no       0.78 
+       22       2:no       2:no       0.991 
+       23       2:no       2:no       0.881 
+       24       2:no       2:no       0.881 
+       25       2:no       2:no       0.78 
+       26       2:no      1:yes   +   0.846 
+       27       2:no       2:no       0.881 
+       28       2:no       2:no       1 
+       29       2:no       2:no       0.991 
+       30       2:no      1:yes   +   0.528 
+       31       2:no       2:no       0.881 
+       32       2:no      1:yes   +   0.545 
+       33       2:no      1:yes   +   0.846 
+       34       2:no       2:no       0.881 
+       35       2:no       2:no       0.991 
+       36       2:no      1:yes   +   0.545 
+       37       2:no      1:yes   +   0.846 
+       38       2:no      1:yes   +   0.545 
+       39       2:no       2:no       0.991 
+       40       2:no       2:no       0.881 
+       41       2:no       2:no       0.991 
+       42       2:no       2:no       0.881 
+       43       2:no      1:yes   +   0.545 
+       44       2:no       2:no       0.881 
+       45       2:no       2:no       0.78 
+       46       2:no       2:no       0.881 
+       47       2:no      1:yes   +   0.833 
+       48       2:no       2:no       0.881 
+       49       2:no       2:no       0.991 
+       50       2:no       2:no       0.991 
+       51      1:yes       2:no   +   0.86 
+       52      1:yes      1:yes       0.545 
+       53      1:yes      1:yes       0.846 
+       54      1:yes      1:yes       0.846 
+       55      1:yes      1:yes       0.682 
+       56      1:yes      1:yes       0.545 
+       57      1:yes       2:no   +   0.833 
+       58      1:yes       2:no   +   0.881 
+       59      1:yes      1:yes       0.846 
+       60      1:yes      1:yes       0.545 
+       61      1:yes       2:no   +   0.991 
+       62      1:yes       2:no   +   0.881 
+       63      1:yes      1:yes       0.846 
+       64      1:yes       2:no   +   0.86 
+       65      1:yes      1:yes       0.545 
+       66      1:yes      1:yes       0.682 
+       67      1:yes      1:yes       0.846 
+       68      1:yes       2:no   +   0.881 
+       69      1:yes       2:no   +   0.78 
+       70      1:yes      1:yes       0.528 
+       71      1:yes      1:yes       0.846 
+       72      1:yes      1:yes       0.545 
+       73      1:yes       2:no   +   0.833 
+       74      1:yes      1:yes       0.682 
+       75      1:yes       2:no   +   0.78 
+       76      1:yes       2:no   +   1 
+       77      1:yes      1:yes       0.682 
+
+=== Classifier model for fold 7 ===
+
+J48 pruned tree
+------------------
+
+glucose <= 0.63871
+|   BMI <= 0.165644: no (123.0/2.0)
+|   BMI > 0.165644
+|   |   age <= 0.116667: no (203.0/33.0)
+|   |   age > 0.116667
+|   |   |   glucose <= 0.354839
+|   |   |   |   insulin <= 0.088942: no (16.0)
+|   |   |   |   insulin > 0.088942
+|   |   |   |   |   pedigree <= 0.270282: no (31.0/4.0)
+|   |   |   |   |   pedigree > 0.270282: yes (4.0)
+|   |   |   glucose > 0.354839
+|   |   |   |   age <= 0.616667
+|   |   |   |   |   pedigree <= 0.191716: no (91.0/41.0)
+|   |   |   |   |   pedigree > 0.191716: yes (51.0/12.0)
+|   |   |   |   age > 0.616667: no (12.0/1.0)
+glucose > 0.63871
+|   glucose <= 0.787097
+|   |   age <= 0.05: no (10.0/2.0)
+|   |   age > 0.05: yes (79.0/25.0)
+|   glucose > 0.787097: yes (71.0/10.0)
+
+Number of Leaves  : 	11
+
+Size of the tree : 	21
+
+        1       2:no      1:yes   +   0.684 
+        2       2:no       2:no       0.837 
+        3       2:no       2:no       0.837 
+        4       2:no      1:yes   +   0.859 
+        5       2:no       2:no       0.984 
+        6       2:no       2:no       0.837 
+        7       2:no       2:no       0.549 
+        8       2:no       2:no       0.984 
+        9       2:no       2:no       0.984 
+       10       2:no       2:no       0.984 
+       11       2:no       2:no       0.984 
+       12       2:no       2:no       0.837 
+       13       2:no       2:no       0.549 
+       14       2:no       2:no       0.837 
+       15       2:no       2:no       0.837 
+       16       2:no      1:yes   +   0.684 
+       17       2:no       2:no       0.984 
+       18       2:no       2:no       0.984 
+       19       2:no       2:no       0.984 
+       20       2:no       2:no       0.984 
+       21       2:no      1:yes   +   0.684 
+       22       2:no       2:no       0.984 
+       23       2:no       2:no       0.549 
+       24       2:no       2:no       0.837 
+       25       2:no       2:no       0.871 
+       26       2:no      1:yes   +   0.684 
+       27       2:no       2:no       0.917 
+       28       2:no       2:no       0.549 
+       29       2:no       2:no       0.549 
+       30       2:no       2:no       0.837 
+       31       2:no       2:no       0.837 
+       32       2:no       2:no       0.837 
+       33       2:no       2:no       0.984 
+       34       2:no       2:no       0.984 
+       35       2:no       2:no       1 
+       36       2:no       2:no       0.837 
+       37       2:no       2:no       0.837 
+       38       2:no      1:yes   +   0.765 
+       39       2:no       2:no       0.984 
+       40       2:no       2:no       0.837 
+       41       2:no       2:no       0.837 
+       42       2:no      1:yes   +   0.684 
+       43       2:no       2:no       0.837 
+       44       2:no       2:no       0.984 
+       45       2:no       2:no       0.984 
+       46       2:no       2:no       0.837 
+       47       2:no       2:no       0.549 
+       48       2:no       2:no       0.549 
+       49       2:no      1:yes   +   0.684 
+       50       2:no       2:no       0.837 
+       51      1:yes      1:yes       0.684 
+       52      1:yes      1:yes       0.765 
+       53      1:yes      1:yes       0.859 
+       54      1:yes       2:no   +   0.549 
+       55      1:yes       2:no   +   0.549 
+       56      1:yes       2:no   +   0.549 
+       57      1:yes       2:no   +   0.549 
+       58      1:yes       2:no   +   0.549 
+       59      1:yes       2:no   +   0.837 
+       60      1:yes      1:yes       0.859 
+       61      1:yes       2:no   +   0.837 
+       62      1:yes       2:no   +   0.837 
+       63      1:yes       2:no   +   0.549 
+       64      1:yes       2:no   +   0.549 
+       65      1:yes       2:no   +   0.837 
+       66      1:yes      1:yes       0.859 
+       67      1:yes      1:yes       0.859 
+       68      1:yes      1:yes       0.859 
+       69      1:yes      1:yes       0.859 
+       70      1:yes       2:no   +   0.837 
+       71      1:yes      1:yes       0.765 
+       72      1:yes      1:yes       0.859 
+       73      1:yes       2:no   +   0.549 
+       74      1:yes      1:yes       0.684 
+       75      1:yes       2:no   +   0.984 
+       76      1:yes       2:no   +   0.549 
+       77      1:yes       2:no   +   0.837 
+
+=== Classifier model for fold 8 ===
+
+J48 pruned tree
+------------------
+
+glucose <= 0.535484
+|   age <= 0.116667: no (242.0/17.0)
+|   age > 0.116667
+|   |   BMI <= 0.165644: no (34.0)
+|   |   BMI > 0.165644
+|   |   |   insulin <= 0.08774: no (20.0)
+|   |   |   insulin > 0.08774
+|   |   |   |   pedigree <= 0.233134: no (104.0/39.0)
+|   |   |   |   pedigree > 0.233134: yes (34.0/9.0)
+glucose > 0.535484
+|   BMI <= 0.239264
+|   |   glucose <= 0.651613: no (36.0/5.0)
+|   |   glucose > 0.651613
+|   |   |   age <= 0.066667: no (4.0)
+|   |   |   age > 0.066667
+|   |   |   |   BMI <= 0.233129: yes (23.0/7.0)
+|   |   |   |   BMI > 0.233129: no (4.0)
+|   BMI > 0.239264
+|   |   glucose <= 0.729032
+|   |   |   BMI <= 0.476483
+|   |   |   |   age <= 0.333333
+|   |   |   |   |   insulin <= 0.21875
+|   |   |   |   |   |   pedigree <= 0.152434: no (22.0/7.0)
+|   |   |   |   |   |   pedigree > 0.152434
+|   |   |   |   |   |   |   BMI <= 0.435583: yes (13.0/1.0)
+|   |   |   |   |   |   |   BMI > 0.435583
+|   |   |   |   |   |   |   |   glucose <= 0.56129: yes (3.0/1.0)
+|   |   |   |   |   |   |   |   glucose > 0.56129: no (3.0)
+|   |   |   |   |   insulin > 0.21875: no (13.0/1.0)
+|   |   |   |   age > 0.333333
+|   |   |   |   |   pedigree <= 0.063194
+|   |   |   |   |   |   age <= 0.383333: yes (2.0)
+|   |   |   |   |   |   age > 0.383333: no (4.0)
+|   |   |   |   |   pedigree > 0.063194: yes (22.0/2.0)
+|   |   |   BMI > 0.476483: yes (18.0/1.0)
+|   |   glucose > 0.729032: yes (90.0/12.0)
+
+Number of Leaves  : 	19
+
+Size of the tree : 	37
+
+        1       2:no      1:yes   +   0.944 
+        2       2:no       2:no       0.625 
+        3       2:no      1:yes   +   0.909 
+        4       2:no       2:no       0.93 
+        5       2:no       2:no       0.93 
+        6       2:no       2:no       1 
+        7       2:no      1:yes   +   0.696 
+        8       2:no       2:no       0.93 
+        9       2:no       2:no       0.93 
+       10       2:no       2:no       0.93 
+       11       2:no       2:no       0.93 
+       12       2:no       2:no       0.682 
+       13       2:no       2:no       0.93 
+       14       2:no       2:no       0.93 
+       15       2:no      1:yes   +   0.944 
+       16       2:no       2:no       0.625 
+       17       2:no       2:no       0.625 
+       18       2:no       2:no       0.93 
+       19       2:no       2:no       0.93 
+       20       2:no       2:no       1 
+       21       2:no       2:no       0.93 
+       22       2:no       2:no       0.861 
+       23       2:no       2:no       0.93 
+       24       2:no       2:no       1 
+       25       2:no       2:no       0.93 
+       26       2:no      1:yes   +   0.923 
+       27       2:no       2:no       0.625 
+       28       2:no       2:no       0.682 
+       29       2:no       2:no       0.93 
+       30       2:no      1:yes   +   0.944 
+       31       2:no       2:no       0.861 
+       32       2:no       2:no       0.861 
+       33       2:no       2:no       0.93 
+       34       2:no       2:no       0.93 
+       35       2:no       2:no       0.625 
+       36       2:no       2:no       0.625 
+       37       2:no       2:no       0.93 
+       38       2:no       2:no       1 
+       39       2:no       2:no       0.93 
+       40       2:no       2:no       0.625 
+       41       2:no       2:no       1 
+       42       2:no       2:no       1 
+       43       2:no       2:no       0.93 
+       44       2:no       2:no       0.93 
+       45       2:no       2:no       0.625 
+       46       2:no       2:no       0.93 
+       47       2:no      1:yes   +   0.696 
+       48       2:no       2:no       1 
+       49       2:no       2:no       0.93 
+       50       2:no       2:no       0.93 
+       51      1:yes      1:yes       0.923 
+       52      1:yes      1:yes       0.735 
+       53      1:yes      1:yes       0.944 
+       54      1:yes       2:no   +   1 
+       55      1:yes      1:yes       0.923 
+       56      1:yes       2:no   +   0.93 
+       57      1:yes       2:no   +   0.923 
+       58      1:yes       2:no   +   0.625 
+       59      1:yes       2:no   +   0.93 
+       60      1:yes       2:no   +   0.625 
+       61      1:yes      1:yes       0.735 
+       62      1:yes      1:yes       0.867 
+       63      1:yes       2:no   +   0.93 
+       64      1:yes      1:yes       0.923 
+       65      1:yes      1:yes       0.909 
+       66      1:yes       2:no   +   0.625 
+       67      1:yes       2:no   +   0.861 
+       68      1:yes       2:no   +   0.93 
+       69      1:yes       2:no   +   0.682 
+       70      1:yes      1:yes       0.867 
+       71      1:yes      1:yes       0.909 
+       72      1:yes       2:no   +   1 
+       73      1:yes       2:no   +   0.93 
+       74      1:yes       2:no   +   0.93 
+       75      1:yes      1:yes       0.944 
+       76      1:yes       2:no   +   0.625 
+       77      1:yes      1:yes       0.735 
+
+=== Classifier model for fold 9 ===
+
+J48 pruned tree
+------------------
+
+glucose <= 0.535484
+|   BMI <= 0.167689: no (106.0)
+|   BMI > 0.167689
+|   |   age <= 0.116667: no (173.0/21.0)
+|   |   age > 0.116667
+|   |   |   insulin <= 0.117788: no (28.0)
+|   |   |   insulin > 0.117788
+|   |   |   |   age <= 0.583333
+|   |   |   |   |   pedigree <= 0.052092
+|   |   |   |   |   |   BMI <= 0.290389
+|   |   |   |   |   |   |   BMI <= 0.237219: no (5.0)
+|   |   |   |   |   |   |   BMI > 0.237219: yes (4.0/1.0)
+|   |   |   |   |   |   BMI > 0.290389: no (12.0)
+|   |   |   |   |   pedigree > 0.052092
+|   |   |   |   |   |   glucose <= 0.354839
+|   |   |   |   |   |   |   pedigree <= 0.272844
+|   |   |   |   |   |   |   |   age <= 0.35: no (13.0)
+|   |   |   |   |   |   |   |   age > 0.35
+|   |   |   |   |   |   |   |   |   glucose <= 0.341935: yes (4.0/1.0)
+|   |   |   |   |   |   |   |   |   glucose > 0.341935: no (2.0)
+|   |   |   |   |   |   |   pedigree > 0.272844: yes (3.0)
+|   |   |   |   |   |   glucose > 0.354839: yes (76.0/25.0)
+|   |   |   |   age > 0.583333: no (8.0)
+glucose > 0.535484
+|   glucose <= 0.787097
+|   |   age <= 0.05: no (37.0/9.0)
+|   |   age > 0.05
+|   |   |   BMI <= 0.239264
+|   |   |   |   insulin <= 0.145433
+|   |   |   |   |   age <= 0.5: yes (7.0)
+|   |   |   |   |   age > 0.5: no (2.0)
+|   |   |   |   insulin > 0.145433
+|   |   |   |   |   glucose <= 0.651613: no (17.0/1.0)
+|   |   |   |   |   glucose > 0.651613
+|   |   |   |   |   |   age <= 0.533333
+|   |   |   |   |   |   |   age <= 0.4
+|   |   |   |   |   |   |   |   glucose <= 0.658065: yes (3.0/1.0)
+|   |   |   |   |   |   |   |   glucose > 0.658065: no (3.0)
+|   |   |   |   |   |   |   age > 0.4: yes (4.0)
+|   |   |   |   |   |   age > 0.533333: no (4.0)
+|   |   |   BMI > 0.239264: yes (106.0/33.0)
+|   glucose > 0.787097: yes (75.0/10.0)
+
+Number of Leaves  : 	22
+
+Size of the tree : 	43
+
+        1       2:no      1:yes   +   0.671 
+        2       2:no       2:no       1 
+        3       2:no       2:no       0.879 
+        4       2:no       2:no       1 
+        5       2:no       2:no       0.757 
+        6       2:no       2:no       0.879 
+        7       2:no       2:no       1 
+        8       2:no       2:no       0.879 
+        9       2:no       2:no       1 
+       10       2:no       2:no       1 
+       11       2:no      1:yes   +   0.867 
+       12       2:no      1:yes   +   0.689 
+       13       2:no       2:no       0.757 
+       14       2:no       2:no       1 
+       15       2:no       2:no       0.879 
+       16       2:no       2:no       1 
+       17       2:no       2:no       1 
+       18       2:no       2:no       1 
+       19       2:no       2:no       1 
+       20       2:no       2:no       0.879 
+       21       2:no       2:no       1 
+       22       2:no      1:yes   +   1 
+       23       2:no       2:no       1 
+       24       2:no       2:no       1 
+       25       2:no       2:no       0.879 
+       26       2:no       2:no       1 
+       27       2:no      1:yes   +   0.671 
+       28       2:no       2:no       1 
+       29       2:no       2:no       1 
+       30       2:no       2:no       1 
+       31       2:no       2:no       0.879 
+       32       2:no       2:no       1 
+       33       2:no       2:no       0.941 
+       34       2:no       2:no       0.879 
+       35       2:no       2:no       1 
+       36       2:no       2:no       1 
+       37       2:no       2:no       0.757 
+       38       2:no       2:no       0.879 
+       39       2:no      1:yes   +   1 
+       40       2:no       2:no       0.879 
+       41       2:no       2:no       0.879 
+       42       2:no       2:no       1 
+       43       2:no       2:no       0.757 
+       44       2:no       2:no       1 
+       45       2:no       2:no       1 
+       46       2:no       2:no       0.879 
+       47       2:no      1:yes   +   0.689 
+       48       2:no       2:no       0.879 
+       49       2:no       2:no       0.879 
+       50       2:no       2:no       1 
+       51      1:yes      1:yes       0.689 
+       52      1:yes       2:no   +   1 
+       53      1:yes      1:yes       0.867 
+       54      1:yes      1:yes       0.671 
+       55      1:yes       2:no   +   0.879 
+       56      1:yes      1:yes       0.867 
+       57      1:yes       2:no   +   0.757 
+       58      1:yes       2:no   +   1 
+       59      1:yes      1:yes       0.671 
+       60      1:yes      1:yes       0.689 
+       61      1:yes      1:yes       0.867 
+       62      1:yes      1:yes       0.689 
+       63      1:yes       2:no   +   0.757 
+       64      1:yes      1:yes       0.671 
+       65      1:yes      1:yes       0.671 
+       66      1:yes      1:yes       0.671 
+       67      1:yes       2:no   +   1 
+       68      1:yes      1:yes       0.689 
+       69      1:yes       2:no   +   0.757 
+       70      1:yes       2:no   +   1 
+       71      1:yes      1:yes       0.689 
+       72      1:yes       2:no   +   1 
+       73      1:yes      1:yes       0.689 
+       74      1:yes       2:no   +   1 
+       75      1:yes      1:yes       0.671 
+       76      1:yes      1:yes       0.689 
+
+=== Classifier model for fold 10 ===
+
+J48 pruned tree
+------------------
+
+glucose <= 0.535484
+|   BMI <= 0.167689: no (112.0/1.0)
+|   BMI > 0.167689
+|   |   age <= 0.116667: no (163.0/19.0)
+|   |   age > 0.116667
+|   |   |   insulin <= 0.088942: no (20.0)
+|   |   |   insulin > 0.088942
+|   |   |   |   glucose <= 0.303226: no (21.0/2.0)
+|   |   |   |   glucose > 0.303226
+|   |   |   |   |   pedigree <= 0.059351
+|   |   |   |   |   |   BMI <= 0.337423
+|   |   |   |   |   |   |   insulin <= 0.158654: no (2.0)
+|   |   |   |   |   |   |   insulin > 0.158654
+|   |   |   |   |   |   |   |   BMI <= 0.237219: no (7.0/1.0)
+|   |   |   |   |   |   |   |   BMI > 0.237219
+|   |   |   |   |   |   |   |   |   glucose <= 0.367742: no (3.0/1.0)
+|   |   |   |   |   |   |   |   |   glucose > 0.367742: yes (4.0)
+|   |   |   |   |   |   BMI > 0.337423: no (9.0)
+|   |   |   |   |   pedigree > 0.059351: yes (90.0/36.0)
+glucose > 0.535484
+|   BMI <= 0.239264
+|   |   glucose <= 0.651613: no (38.0/5.0)
+|   |   glucose > 0.651613
+|   |   |   age <= 0.65
+|   |   |   |   age <= 0.066667: no (3.0)
+|   |   |   |   age > 0.066667
+|   |   |   |   |   BMI <= 0.182004: yes (11.0/1.0)
+|   |   |   |   |   BMI > 0.182004
+|   |   |   |   |   |   pedigree <= 0.135781: yes (11.0/4.0)
+|   |   |   |   |   |   pedigree > 0.135781: no (4.0)
+|   |   |   age > 0.65: no (4.0)
+|   BMI > 0.239264: yes (190.0/52.0)
+
+Number of Leaves  : 	17
+
+Size of the tree : 	33
+
+        1       2:no      1:yes   +   0.6 
+        2       2:no       2:no       0.883 
+        3       2:no       2:no       1 
+        4       2:no      1:yes   +   0.6 
+        5       2:no       2:no       0.883 
+        6       2:no       2:no       0.883 
+        7       2:no       2:no       0.883 
+        8       2:no       2:no       0.883 
+        9       2:no       2:no       0.991 
+       10       2:no       2:no       0.857 
+       11       2:no      1:yes   +   0.6 
+       12       2:no       2:no       0.883 
+       13       2:no       2:no       0.991 
+       14       2:no       2:no       0.991 
+       15       2:no       2:no       0.883 
+       16       2:no       2:no       0.883 
+       17       2:no       2:no       0.883 
+       18       2:no       2:no       0.991 
+       19       2:no       2:no       0.991 
+       20       2:no       2:no       0.991 
+       21       2:no       2:no       0.883 
+       22       2:no      1:yes   +   0.726 
+       23       2:no      1:yes   +   0.726 
+       24       2:no       2:no       0.883 
+       25       2:no      1:yes   +   0.6 
+       26       2:no      1:yes   +   0.726 
+       27       2:no       2:no       0.883 
+       28       2:no       2:no       0.883 
+       29       2:no       2:no       0.991 
+       30       2:no       2:no       0.883 
+       31       2:no       2:no       0.883 
+       32       2:no       2:no       0.883 
+       33       2:no       2:no       1 
+       34       2:no      1:yes   +   0.6 
+       35       2:no      1:yes   +   0.6 
+       36       2:no       2:no       0.991 
+       37       2:no      1:yes   +   0.6 
+       38       2:no       2:no       0.883 
+       39       2:no       2:no       0.868 
+       40       2:no       2:no       0.883 
+       41       2:no      1:yes   +   0.726 
+       42       2:no      1:yes   +   0.726 
+       43       2:no       2:no       1 
+       44       2:no       2:no       0.991 
+       45       2:no      1:yes   +   0.726 
+       46       2:no       2:no       0.991 
+       47       2:no       2:no       0.883 
+       48       2:no       2:no       0.883 
+       49       2:no       2:no       0.883 
+       50       2:no       2:no       0.883 
+       51      1:yes      1:yes       0.726 
+       52      1:yes       2:no   +   0.883 
+       53      1:yes       2:no   +   0.883 
+       54      1:yes       2:no   +   0.868 
+       55      1:yes       2:no   +   1 
+       56      1:yes      1:yes       0.726 
+       57      1:yes      1:yes       0.726 
+       58      1:yes      1:yes       0.6 
+       59      1:yes      1:yes       0.726 
+       60      1:yes      1:yes       0.6 
+       61      1:yes      1:yes       0.726 
+       62      1:yes      1:yes       0.6 
+       63      1:yes      1:yes       0.909 
+       64      1:yes      1:yes       0.6 
+       65      1:yes       2:no   +   0.883 
+       66      1:yes      1:yes       0.726 
+       67      1:yes      1:yes       0.726 
+       68      1:yes      1:yes       0.726 
+       69      1:yes      1:yes       0.726 
+       70      1:yes      1:yes       0.726 
+       71      1:yes      1:yes       0.6 
+       72      1:yes      1:yes       0.726 
+       73      1:yes      1:yes       0.6 
+       74      1:yes      1:yes       0.726 
+       75      1:yes      1:yes       0.6 
+       76      1:yes       2:no   +   0.905 
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         563               73.3073 %
+Incorrectly Classified Instances       205               26.6927 %
+Kappa statistic                          0.4181
+K&B Relative Info Score                 31.208  %
+K&B Information Score                  223.6538 bits      0.2912 bits/instance
+Class complexity | order 0             716.6542 bits      0.9331 bits/instance
+Class complexity | scheme            18807.9384 bits     24.4895 bits/instance
+Complexity improvement     (Sf)     -18091.2842 bits    -23.5564 bits/instance
+Mean absolute error                      0.3125
+Root mean squared error                  0.4328
+Relative absolute error                 68.7562 %
+Root relative squared error             90.8084 %
+Total Number of Instances              768     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.638    0.216    0.613      0.638    0.625      0.418    0.773     0.592     yes
+                 0.784    0.362    0.802      0.784    0.793      0.418    0.773     0.834     no
+Weighted Avg.    0.733    0.311    0.736      0.733    0.734      0.418    0.773     0.750     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 171  97 |   a = yes
+ 108 392 |   b = no
+

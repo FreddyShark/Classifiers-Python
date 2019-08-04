@@ -1,0 +1,125 @@
+=== Run information ====
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     pima-normalized-headers
+Instances:    768
+Attributes:   9
+              pregnant
+              glucose
+              blood
+              skin
+              insulin
+              BMI
+              pedigree
+              age
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    2.6840994586226326
+    Node 2    -3.4467207964161455
+    Node 3    -6.46340920747004
+    Node 4    -2.340158665865905
+    Node 5    -3.2715981870314104
+    Node 6    -1.5550369351723077
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -2.6840994586162985
+    Node 2    3.4467207964115203
+    Node 3    6.4634092073830915
+    Node 4    2.340158665862442
+    Node 5    3.2715981870250195
+    Node 6    1.5550369351699445
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -10.592538819055436
+    Attrib pregnant    -0.3351632545850031
+    Attrib glucose    -6.121736416616192
+    Attrib blood    -2.4169994694702246
+    Attrib skin    1.5226886815867928
+    Attrib insulin    -14.26545651293788
+    Attrib BMI    3.443791517253015
+    Attrib pedigree    -1.880376015457268
+    Attrib age    5.565855353219873
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -12.303173115695788
+    Attrib pregnant    -0.870116255965031
+    Attrib glucose    -3.637408750457953
+    Attrib blood    -3.873508545770365
+    Attrib skin    1.3424581835407476
+    Attrib insulin    -7.817591730017144
+    Attrib BMI    -12.908594445738188
+    Attrib pedigree    2.6436105762981117
+    Attrib age    6.88291478959838
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -6.073458412145935
+    Attrib pregnant    -1.5841820641929327
+    Attrib glucose    -5.602268701126896
+    Attrib blood    6.1369745164270535
+    Attrib skin    9.913875173469162
+    Attrib insulin    -2.4029735573957702
+    Attrib BMI    -7.217405717200289
+    Attrib pedigree    0.06217409760733056
+    Attrib age    -7.680573670329322
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -10.727948338014293
+    Attrib pregnant    -0.759564618234779
+    Attrib glucose    -4.528471735301163
+    Attrib blood    -0.9917554769502022
+    Attrib skin    -10.952650538756162
+    Attrib insulin    8.956117863790805
+    Attrib BMI    2.5036459617575044
+    Attrib pedigree    0.042455248729949054
+    Attrib age    -10.675291331946756
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -12.558703089718456
+    Attrib pregnant    0.2709489131782421
+    Attrib glucose    -2.428049124113657
+    Attrib blood    -0.13717472472575276
+    Attrib skin    -1.2609894641657176
+    Attrib insulin    -3.6468542091592204
+    Attrib BMI    -7.766169682744764
+    Attrib pedigree    -12.337927865309483
+    Attrib age    -0.5626010726923545
+Class yes
+    Input
+    Node 0
+Class no
+    Input
+    Node 1
+
+
+Time taken to build model: 0.49 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         579               75.3906 %
+Incorrectly Classified Instances       189               24.6094 %
+Kappa statistic                          0.4607
+Mean absolute error                      0.2942
+Root mean squared error                  0.4226
+Relative absolute error                 64.7259 %
+Root relative squared error             88.6682 %
+Total Number of Instances              768     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.657    0.194    0.645      0.657    0.651      0.461    0.803     0.654     yes
+                 0.806    0.343    0.814      0.806    0.810      0.461    0.803     0.879     no
+Weighted Avg.    0.754    0.291    0.755      0.754    0.754      0.461    0.803     0.800     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 176  92 |   a = yes
+  97 403 |   b = no
+

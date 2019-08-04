@@ -1,0 +1,48 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     pima-normalized-headers-weka.filters.supervised.attribute.AttributeSelection-Eweka.attributeSelection.CfsSubsetEval -P 1 -E 1-Sweka.attributeSelection.BestFirst -D 1 -N 5
+Instances:    768
+Attributes:   6
+              glucose
+              insulin
+              BMI
+              pedigree
+              age
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 0.1 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances         583               75.9115 %
+Incorrectly Classified Instances       185               24.0885 %
+Kappa statistic                          0.461 
+Mean absolute error                      0.3039
+Root mean squared error                  0.4051
+Relative absolute error                 66.868  %
+Root relative squared error             84.9973 %
+Total Number of Instances              768     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.619    0.166    0.667      0.619    0.642      0.462    0.823     0.675     yes
+                 0.834    0.381    0.803      0.834    0.818      0.462    0.823     0.898     no
+Weighted Avg.    0.759    0.306    0.756      0.759    0.757      0.462    0.823     0.820     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 166 102 |   a = yes
+  83 417 |   b = no
